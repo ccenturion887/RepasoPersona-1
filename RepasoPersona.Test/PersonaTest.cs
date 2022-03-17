@@ -57,7 +57,7 @@ namespace RepasoPersona.Test
         public void DebitarCero()
         {
             var ex = Assert.Throws<ArgumentException>(() => Pepito.Debitar(0));
-            Assert.Equal("El monto debe ser mayor a 0", ex.Message);
+            Assert.Equal("El monto tiene que ser mayor a cero.", ex.Message);
         }
     }
 }
